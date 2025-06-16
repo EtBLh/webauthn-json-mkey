@@ -19,12 +19,28 @@ const simplifiedExtensionsSchema: Schema = {
   appid: optional(copy),
   appidExclude: optional(copy),
   credProps: optional(copy),
+  prf: optional({
+    eval: optional({
+      first: optional(convert),
+      second: optional(convert)
+    }),
+    enabled: optional(copy)
+  })
+
 };
 
 const simplifiedClientExtensionResultsSchema = {
   appid: optional(copy),
   appidExclude: optional(copy),
   credProps: optional(copy),
+  prf: optional({
+    results: optional({
+      first: optional(convert),
+      second: optional(convert)
+    }),
+    enabled: optional(copy)
+  })
+
 };
 
 // `navigator.create()` request
