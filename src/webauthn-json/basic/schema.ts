@@ -26,7 +26,6 @@ const simplifiedExtensionsSchema: Schema = {
     }),
     enabled: optional(copy)
   })
-
 };
 
 const simplifiedClientExtensionResultsSchema = {
@@ -40,7 +39,6 @@ const simplifiedClientExtensionResultsSchema = {
     }),
     enabled: optional(copy)
   })
-
 };
 
 // `navigator.create()` request
